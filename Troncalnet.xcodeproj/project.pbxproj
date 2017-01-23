@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F4FF91C1D19D69200201694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FF91B1D19D69200201694 /* ViewController.swift */; };
+		1F4FF9211D19D69200201694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4FF9201D19D69200201694 /* Assets.xcassets */; };
+		1F4FF92F1D19D69200201694 /* TroncalnetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FF92E1D19D69200201694 /* TroncalnetTests.swift */; };
+		1F4FF93A1D19D69200201694 /* TroncalnetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FF9391D19D69200201694 /* TroncalnetUITests.swift */; };
+		1F4FF9481D19D6C400201694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FF9471D19D6C400201694 /* AppDelegate.swift */; };
+		1F4FF94A1D19D6C900201694 /* Auto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FF9491D19D6C900201694 /* Auto.swift */; };
+		1F4FF94C1D19D6EA00201694 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4FF94B1D19D6EA00201694 /* Images.xcassets */; };
+		1F4FF94F1D19D74B00201694 /* AutomovilesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FF94E1D19D74B00201694 /* AutomovilesTableViewController.swift */; };
+		1F4FF9511D19D75A00201694 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FF9501D19D75A00201694 /* MainViewController.swift */; };
+		1F4FF9551D19D76600201694 /* MapaRegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FF9521D19D76600201694 /* MapaRegistroViewController.swift */; };
+		1F4FF9561D19D76600201694 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FF9531D19D76600201694 /* MapaViewController.swift */; };
+		1F4FF9571D19D76600201694 /* NotificacionesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FF9541D19D76600201694 /* NotificacionesTableViewController.swift */; };
+		1F4FF95A1D19D78700201694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4FF9581D19D78700201694 /* Main.storyboard */; };
+		1F4FF95D1D19D78D00201694 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4FF95B1D19D78D00201694 /* LaunchScreen.xib */; };
+		1F4FF95F1D19D82400201694 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FF95E1D19D82400201694 /* Usuario.swift */; };
+		1F95932D1D5154B6005C1ABD /* HistorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95932C1D5154B6005C1ABD /* HistorialViewController.swift */; };
+		1FEA7DDD1D5005BA009EE313 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEA7DDC1D5005BA009EE313 /* RegistroViewController.swift */; };
+		BBD7860F1DE7659800EE682D /* Direccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD7860E1DE7659800EE682D /* Direccion.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F4FF92B1D19D69200201694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F4FF90E1D19D69200201694 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F4FF9151D19D69200201694;
+			remoteInfo = Troncalnet;
+		};
+		1F4FF9361D19D69200201694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F4FF90E1D19D69200201694 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F4FF9151D19D69200201694;
+			remoteInfo = Troncalnet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F4FF9161D19D69200201694 /* Troncalnet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Troncalnet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4FF91B1D19D69200201694 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F4FF9201D19D69200201694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F4FF9251D19D69200201694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F4FF92A1D19D69200201694 /* TroncalnetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TroncalnetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4FF92E1D19D69200201694 /* TroncalnetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TroncalnetTests.swift; sourceTree = "<group>"; };
+		1F4FF9301D19D69200201694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F4FF9351D19D69200201694 /* TroncalnetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TroncalnetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4FF9391D19D69200201694 /* TroncalnetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TroncalnetUITests.swift; sourceTree = "<group>"; };
+		1F4FF93B1D19D69200201694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F4FF9471D19D6C400201694 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F4FF9491D19D6C900201694 /* Auto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auto.swift; sourceTree = "<group>"; };
+		1F4FF94B1D19D6EA00201694 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1F4FF94D1D19D70400201694 /* ufonts.com_gotham-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-book.ttf"; sourceTree = "<group>"; };
+		1F4FF94E1D19D74B00201694 /* AutomovilesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomovilesTableViewController.swift; sourceTree = "<group>"; };
+		1F4FF9501D19D75A00201694 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1F4FF9521D19D76600201694 /* MapaRegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaRegistroViewController.swift; sourceTree = "<group>"; };
+		1F4FF9531D19D76600201694 /* MapaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
+		1F4FF9541D19D76600201694 /* NotificacionesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionesTableViewController.swift; sourceTree = "<group>"; };
+		1F4FF9591D19D78700201694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F4FF95C1D19D78D00201694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1F4FF95E1D19D82400201694 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		1F95932C1D5154B6005C1ABD /* HistorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorialViewController.swift; sourceTree = "<group>"; };
+		1FEA7DDC1D5005BA009EE313 /* RegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		BBD7860E1DE7659800EE682D /* Direccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direccion.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F4FF9131D19D69200201694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4FF9271D19D69200201694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4FF9321D19D69200201694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F4FF90D1D19D69200201694 = {
+			isa = PBXGroup;
+			children = (
+				1F4FF9181D19D69200201694 /* Troncalnet */,
+				1F4FF92D1D19D69200201694 /* TroncalnetTests */,
+				1F4FF9381D19D69200201694 /* TroncalnetUITests */,
+				1F4FF9171D19D69200201694 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F4FF9171D19D69200201694 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F4FF9161D19D69200201694 /* Troncalnet.app */,
+				1F4FF92A1D19D69200201694 /* TroncalnetTests.xctest */,
+				1F4FF9351D19D69200201694 /* TroncalnetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F4FF9181D19D69200201694 /* Troncalnet */ = {
+			isa = PBXGroup;
+			children = (
+				1FEA7DDC1D5005BA009EE313 /* RegistroViewController.swift */,
+				1F4FF91B1D19D69200201694 /* ViewController.swift */,
+				1F4FF94E1D19D74B00201694 /* AutomovilesTableViewController.swift */,
+				1F4FF9471D19D6C400201694 /* AppDelegate.swift */,
+				1F4FF95B1D19D78D00201694 /* LaunchScreen.xib */,
+				1F4FF9581D19D78700201694 /* Main.storyboard */,
+				1F4FF95E1D19D82400201694 /* Usuario.swift */,
+				1F4FF9201D19D69200201694 /* Assets.xcassets */,
+				1F4FF94B1D19D6EA00201694 /* Images.xcassets */,
+				1F4FF9501D19D75A00201694 /* MainViewController.swift */,
+				1F4FF94D1D19D70400201694 /* ufonts.com_gotham-book.ttf */,
+				1F4FF9521D19D76600201694 /* MapaRegistroViewController.swift */,
+				1F4FF9531D19D76600201694 /* MapaViewController.swift */,
+				1F4FF9541D19D76600201694 /* NotificacionesTableViewController.swift */,
+				1F4FF9491D19D6C900201694 /* Auto.swift */,
+				1F4FF9251D19D69200201694 /* Info.plist */,
+				1F95932C1D5154B6005C1ABD /* HistorialViewController.swift */,
+				BBD7860E1DE7659800EE682D /* Direccion.swift */,
+			);
+			path = Troncalnet;
+			sourceTree = "<group>";
+		};
+		1F4FF92D1D19D69200201694 /* TroncalnetTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F4FF92E1D19D69200201694 /* TroncalnetTests.swift */,
+				1F4FF9301D19D69200201694 /* Info.plist */,
+			);
+			path = TroncalnetTests;
+			sourceTree = "<group>";
+		};
+		1F4FF9381D19D69200201694 /* TroncalnetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F4FF9391D19D69200201694 /* TroncalnetUITests.swift */,
+				1F4FF93B1D19D69200201694 /* Info.plist */,
+			);
+			path = TroncalnetUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F4FF9151D19D69200201694 /* Troncalnet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4FF93E1D19D69200201694 /* Build configuration list for PBXNativeTarget "Troncalnet" */;
+			buildPhases = (
+				1F4FF9121D19D69200201694 /* Sources */,
+				1F4FF9131D19D69200201694 /* Frameworks */,
+				1F4FF9141D19D69200201694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Troncalnet;
+			productName = Troncalnet;
+			productReference = 1F4FF9161D19D69200201694 /* Troncalnet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F4FF9291D19D69200201694 /* TroncalnetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4FF9411D19D69200201694 /* Build configuration list for PBXNativeTarget "TroncalnetTests" */;
+			buildPhases = (
+				1F4FF9261D19D69200201694 /* Sources */,
+				1F4FF9271D19D69200201694 /* Frameworks */,
+				1F4FF9281D19D69200201694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F4FF92C1D19D69200201694 /* PBXTargetDependency */,
+			);
+			name = TroncalnetTests;
+			productName = TroncalnetTests;
+			productReference = 1F4FF92A1D19D69200201694 /* TroncalnetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F4FF9341D19D69200201694 /* TroncalnetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4FF9441D19D69200201694 /* Build configuration list for PBXNativeTarget "TroncalnetUITests" */;
+			buildPhases = (
+				1F4FF9311D19D69200201694 /* Sources */,
+				1F4FF9321D19D69200201694 /* Frameworks */,
+				1F4FF9331D19D69200201694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F4FF9371D19D69200201694 /* PBXTargetDependency */,
+			);
+			name = TroncalnetUITests;
+			productName = TroncalnetUITests;
+			productReference = 1F4FF9351D19D69200201694 /* TroncalnetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F4FF90E1D19D69200201694 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Ixco;
+				TargetAttributes = {
+					1F4FF9151D19D69200201694 = {
+						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0820;
+					};
+					1F4FF9291D19D69200201694 = {
+						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0820;
+						TestTargetID = 1F4FF9151D19D69200201694;
+					};
+					1F4FF9341D19D69200201694 = {
+						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0820;
+						TestTargetID = 1F4FF9151D19D69200201694;
+					};
+				};
+			};
+			buildConfigurationList = 1F4FF9111D19D69200201694 /* Build configuration list for PBXProject "Troncalnet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F4FF90D1D19D69200201694;
+			productRefGroup = 1F4FF9171D19D69200201694 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F4FF9151D19D69200201694 /* Troncalnet */,
+				1F4FF9291D19D69200201694 /* TroncalnetTests */,
+				1F4FF9341D19D69200201694 /* TroncalnetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F4FF9141D19D69200201694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4FF95D1D19D78D00201694 /* LaunchScreen.xib in Resources */,
+				1F4FF95A1D19D78700201694 /* Main.storyboard in Resources */,
+				1F4FF9211D19D69200201694 /* Assets.xcassets in Resources */,
+				1F4FF94C1D19D6EA00201694 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4FF9281D19D69200201694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4FF9331D19D69200201694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F4FF9121D19D69200201694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4FF9481D19D6C400201694 /* AppDelegate.swift in Sources */,
+				1F4FF91C1D19D69200201694 /* ViewController.swift in Sources */,
+				1F4FF9551D19D76600201694 /* MapaRegistroViewController.swift in Sources */,
+				1F4FF94F1D19D74B00201694 /* AutomovilesTableViewController.swift in Sources */,
+				1F4FF9561D19D76600201694 /* MapaViewController.swift in Sources */,
+				1F4FF95F1D19D82400201694 /* Usuario.swift in Sources */,
+				BBD7860F1DE7659800EE682D /* Direccion.swift in Sources */,
+				1F4FF94A1D19D6C900201694 /* Auto.swift in Sources */,
+				1F4FF9511D19D75A00201694 /* MainViewController.swift in Sources */,
+				1F4FF9571D19D76600201694 /* NotificacionesTableViewController.swift in Sources */,
+				1F95932D1D5154B6005C1ABD /* HistorialViewController.swift in Sources */,
+				1FEA7DDD1D5005BA009EE313 /* RegistroViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4FF9261D19D69200201694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4FF92F1D19D69200201694 /* TroncalnetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4FF9311D19D69200201694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4FF93A1D19D69200201694 /* TroncalnetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F4FF92C1D19D69200201694 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F4FF9151D19D69200201694 /* Troncalnet */;
+			targetProxy = 1F4FF92B1D19D69200201694 /* PBXContainerItemProxy */;
+		};
+		1F4FF9371D19D69200201694 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F4FF9151D19D69200201694 /* Troncalnet */;
+			targetProxy = 1F4FF9361D19D69200201694 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F4FF9581D19D78700201694 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F4FF9591D19D78700201694 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F4FF95B1D19D78D00201694 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F4FF95C1D19D78D00201694 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F4FF93C1D19D69200201694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F4FF93D1D19D69200201694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F4FF93F1D19D69200201694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Troncalnet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ixco.Troncalnet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1F4FF9401D19D69200201694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Troncalnet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ixco.Troncalnet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1F4FF9421D19D69200201694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TroncalnetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ixco.TroncalnetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Troncalnet.app/Troncalnet";
+			};
+			name = Debug;
+		};
+		1F4FF9431D19D69200201694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TroncalnetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ixco.TroncalnetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Troncalnet.app/Troncalnet";
+			};
+			name = Release;
+		};
+		1F4FF9451D19D69200201694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TroncalnetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ixco.TroncalnetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Troncalnet;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1F4FF9461D19D69200201694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TroncalnetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ixco.TroncalnetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Troncalnet;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F4FF9111D19D69200201694 /* Build configuration list for PBXProject "Troncalnet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4FF93C1D19D69200201694 /* Debug */,
+				1F4FF93D1D19D69200201694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F4FF93E1D19D69200201694 /* Build configuration list for PBXNativeTarget "Troncalnet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4FF93F1D19D69200201694 /* Debug */,
+				1F4FF9401D19D69200201694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F4FF9411D19D69200201694 /* Build configuration list for PBXNativeTarget "TroncalnetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4FF9421D19D69200201694 /* Debug */,
+				1F4FF9431D19D69200201694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F4FF9441D19D69200201694 /* Build configuration list for PBXNativeTarget "TroncalnetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4FF9451D19D69200201694 /* Debug */,
+				1F4FF9461D19D69200201694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F4FF90E1D19D69200201694 /* Project object */;
+}
