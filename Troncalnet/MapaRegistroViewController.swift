@@ -9,6 +9,8 @@
 import UIKit
 import MapKit
 import CoreLocation
+import CoreData
+import Foundation
 class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
     var regionRadio: CLLocationDistance = 1000
     var latitude:NSString! = ""
@@ -16,6 +18,7 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
     var latitudes=[String]()
     var longitudes=[String]()
     var route: MKRoute?
+    var polyline: MKPolyline?
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +68,18 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
         mapView.setRegion(MKCoordinateRegionMake(point2.coordinate, MKCoordinateSpanMake(0.7,0.7)), animated: true)
         
         
+        var locations=[CLLocationCoordinate2D].self()
+        var i=self.longitudes.count-1
+        
+        while(i >= 0){
+            let currentLocation = CLLocationCoordinate2D(latitude: Double(self.latitudes[i])!, longitude: Double(self.longitudes[i])!)
+            locations.append(currentLocation)
+            i-=1
+
+        }
+        
+        addPolyLineToMap(locations: locations)
+        /*
         //Busca el camino desde punto 1 a punto 2
         let directionsRequest = MKDirectionsRequest()
         let markOne = MKPlacemark(coordinate: CLLocationCoordinate2DMake(point1.coordinate.latitude, point1.coordinate.longitude), addressDictionary: nil)
@@ -82,6 +97,15 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
                 self.mapView.add((self.route?.polyline)!)
             }
         } as! MKDirectionsHandler)
+         */
+    }
+    func addPolyLineToMap(locations: [CLLocationCoordinate2D])
+    {
+        var coordinates = locations
+        
+        self.polyline = MKPolyline(coordinates: &coordinates, count: locations.count)
+        self.mapView.add(self.polyline!)
+
     }
     func centrarMapa(_ location: CLLocation) {
         let region = MKCoordinateRegionMakeWithDistance(location.coordinate,
@@ -94,11 +118,15 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        //Modifica las propiedades de la linea para un recorrido
-        let myLineRenderer = MKPolylineRenderer(polyline: route!.polyline)
-       myLineRenderer.strokeColor = UIColor.red
-        myLineRenderer.lineWidth = 3
-        return myLineRenderer
+        //if overlay.isKind(of: MKPolyline.self) {
+            // draw the track
+            let polyLineRenderer = MKPolylineRenderer(polyline: self.polyline!)
+            polyLineRenderer.strokeColor = UIColor.blue
+            polyLineRenderer.lineWidth = 2.0
+            
+            return polyLineRenderer
+        //}
+
     }
     
 
