@@ -23,7 +23,8 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         var region:CLLocation!
-       
+        let allAnnotations = self.mapView.annotations
+        self.mapView.removeAnnotations(allAnnotations)
         if(self.latitude.isEqual(to: "")){
             //Si no tiene solo un dato significa que es recorrido
             //por lo tanto hay que centrarlo y llamar la función
@@ -52,12 +53,13 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
     func creaRecorrido(){
         let point1 = MKPointAnnotation()
         let point2 = MKPointAnnotation()
+        let totalPuntos=self.longitudes.count-1
         //Punto inicial
         point1.coordinate = CLLocationCoordinate2DMake(Double(self.latitudes[0])!, Double(self.longitudes[0])!)
         
         mapView.addAnnotation(point1)
         //Punto final
-        point2.coordinate = CLLocationCoordinate2DMake(Double(self.latitudes[1])!, Double(self.longitudes[1])!)
+        point2.coordinate = CLLocationCoordinate2DMake(Double(self.latitudes[totalPuntos])!, Double(self.longitudes[totalPuntos])!)
         mapView.addAnnotation(point2)
         
         //Centra el mapa hacia la coordenada/punto dos
@@ -67,10 +69,10 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
         //Span of the map
         mapView.setRegion(MKCoordinateRegionMake(point2.coordinate, MKCoordinateSpanMake(0.7,0.7)), animated: true)
         
-        
+        //Inicializa arreglo de puntos cardinales
         var locations=[CLLocationCoordinate2D].self()
-        var i=self.longitudes.count-1
-        
+        var i=totalPuntos
+        //Agrega punto a ruta
         while(i >= 0){
             let currentLocation = CLLocationCoordinate2D(latitude: Double(self.latitudes[i])!, longitude: Double(self.longitudes[i])!)
             locations.append(currentLocation)
@@ -79,25 +81,7 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
         }
         
         addPolyLineToMap(locations: locations)
-        /*
-        //Busca el camino desde punto 1 a punto 2
-        let directionsRequest = MKDirectionsRequest()
-        let markOne = MKPlacemark(coordinate: CLLocationCoordinate2DMake(point1.coordinate.latitude, point1.coordinate.longitude), addressDictionary: nil)
-        let markTwo = MKPlacemark(coordinate: CLLocationCoordinate2DMake(point2.coordinate.latitude, point2.coordinate.longitude), addressDictionary: nil)
-        
-        directionsRequest.source=MKMapItem(placemark: markTwo)
-        directionsRequest.destination=MKMapItem(placemark: markOne)
-        directionsRequest.transportType = MKDirectionsTransportType.automobile
-        let directions = MKDirections(request: directionsRequest)
-        //Calcula ruta de punto 1 a punto 2 y la agrega sobre el mapa
-        directions.calculate ( completionHandler: {
-            (response:MKDirectionsResponse?, error: NSError?) in
-            if error == nil {
-                self.route = response!.routes[0] as MKRoute
-                self.mapView.add((self.route?.polyline)!)
-            }
-        } as! MKDirectionsHandler)
-         */
+
     }
     func addPolyLineToMap(locations: [CLLocationCoordinate2D])
     {
