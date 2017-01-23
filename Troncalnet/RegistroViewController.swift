@@ -26,6 +26,8 @@ class RegistroViewController: UITableViewController {
     var latitud:String!
     var longitud:String!
     var registro:Dictionary<String,Dictionary<String,Dictionary<String,String>>>!
+    var recorridoLat:[Int:[String]] = [:]
+    var recorridoLon:[Int:[String]] = [:]
     var direccion:Array<String>!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,6 +87,8 @@ class RegistroViewController: UITableViewController {
                     
                 }else{
                     var contador=1
+                    var viajes = 1
+                    var enViaje = false
                     for (_,_) in self.registro{
                         //Sirve para enviar la informaciòn en orden
                         let value = self.registro[String(contador)]!
@@ -98,8 +102,19 @@ class RegistroViewController: UITableViewController {
                                     self.fechas.append(coordenada["fecha"] as String!)
                                     self.latitude.append(coordenada["latitude"] as String!)
                                     self.longitude.append(coordenada["longitude"] as String!)
+                                    enViaje=true
+                                    
                                 }else if(tipoDeEvento == "Apagado"){
                                     self.fechasAux.append(coordenada["fecha"] as String!)
+                                    self.latitude.append(coordenada["latitude"] as String!)
+                                    self.longitude.append(coordenada["longitude"] as String!)
+                                    if(enViaje){
+                                        self.recorridoLat[viajes]=self.latitude
+                                        self.recorridoLon[viajes]=self.longitude
+                                        enViaje = false
+                                        viajes += 1
+                                    }
+                                }else if(enViaje){
                                     self.latitude.append(coordenada["latitude"] as String!)
                                     self.longitude.append(coordenada["longitude"] as String!)
                                 }
@@ -112,6 +127,7 @@ class RegistroViewController: UITableViewController {
                             }
                             
                         }
+
                         contador += 1
                     }
                     
@@ -181,10 +197,8 @@ class RegistroViewController: UITableViewController {
         if(self.segment.selectedSegmentIndex == 1){
             self.latEnvia.removeAll()
             self.longEnvia.removeAll()
-            self.longEnvia.append(self.longitude[(indexPath.row*2)])
-            self.longEnvia.append(self.longitude[(indexPath.row*2)+1])
-            self.latEnvia.append(self.latitude[(indexPath.row*2)])
-            self.latEnvia.append(self.latitude[(indexPath.row*2)+1])
+            self.longEnvia=self.recorridoLon[indexPath.row+1]!
+            self.latEnvia=self.recorridoLat[indexPath.row+1]!
             
         }else{
             self.latitud = self.latitude[indexPath.row]
