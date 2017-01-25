@@ -48,7 +48,6 @@ class MainViewController: UIViewController,UITextFieldDelegate {
                 var connection:Bool=false
                 let session = URLSession.shared
                 let task = session.dataTask(with: url!, completionHandler: {data, response, error -> Void in
-                    let err: NSError?
                     var jsonResult : Any
                     if(error == nil){
                             do {

@@ -24,6 +24,7 @@
 		1F4FF95F1D19D82400201694 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FF95E1D19D82400201694 /* Usuario.swift */; };
 		1F95932D1D5154B6005C1ABD /* HistorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95932C1D5154B6005C1ABD /* HistorialViewController.swift */; };
 		1FEA7DDD1D5005BA009EE313 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEA7DDC1D5005BA009EE313 /* RegistroViewController.swift */; };
+		BB69A1981E38FCF200EAAFE0 /* ColorPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB69A1971E38FCF200EAAFE0 /* ColorPointAnnotation.swift */; };
 		BBD7860F1DE7659800EE682D /* Direccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD7860E1DE7659800EE682D /* Direccion.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		1F4FF95E1D19D82400201694 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		1F95932C1D5154B6005C1ABD /* HistorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorialViewController.swift; sourceTree = "<group>"; };
 		1FEA7DDC1D5005BA009EE313 /* RegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		BB69A1971E38FCF200EAAFE0 /* ColorPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPointAnnotation.swift; sourceTree = "<group>"; };
 		BBD7860E1DE7659800EE682D /* Direccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direccion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 				1F4FF9251D19D69200201694 /* Info.plist */,
 				1F95932C1D5154B6005C1ABD /* HistorialViewController.swift */,
 				BBD7860E1DE7659800EE682D /* Direccion.swift */,
+				BB69A1971E38FCF200EAAFE0 /* ColorPointAnnotation.swift */,
 			);
 			path = Troncalnet;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				1F4FF9551D19D76600201694 /* MapaRegistroViewController.swift in Sources */,
 				1F4FF94F1D19D74B00201694 /* AutomovilesTableViewController.swift in Sources */,
 				1F4FF9561D19D76600201694 /* MapaViewController.swift in Sources */,
+				BB69A1981E38FCF200EAAFE0 /* ColorPointAnnotation.swift in Sources */,
 				1F4FF95F1D19D82400201694 /* Usuario.swift in Sources */,
 				BBD7860F1DE7659800EE682D /* Direccion.swift in Sources */,
 				1F4FF94A1D19D6C900201694 /* Auto.swift in Sources */,
@@ -401,6 +405,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "2d2ebf01-742c-4265-9d86-211e299584a1";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,6 +447,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "2d2ebf01-742c-4265-9d86-211e299584a1";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";

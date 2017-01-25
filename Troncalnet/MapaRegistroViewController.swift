@@ -56,11 +56,17 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
         let totalPuntos=self.longitudes.count-1
         //Punto inicial
         point1.coordinate = CLLocationCoordinate2DMake(Double(self.latitudes[0])!, Double(self.longitudes[0])!)
-        
-        mapView.addAnnotation(point1)
+        let annotation = ColorPointAnnotation(pinColor: UIColor.blue)
+        annotation.coordinate = point1.coordinate
+        annotation.title = "Inicio"
+        mapView.addAnnotation(annotation)
+        //mapView.addAnnotation(point1)
         //Punto final
         point2.coordinate = CLLocationCoordinate2DMake(Double(self.latitudes[totalPuntos])!, Double(self.longitudes[totalPuntos])!)
-        mapView.addAnnotation(point2)
+        let point2Annotation = ColorPointAnnotation(pinColor: UIColor.red)
+        point2Annotation.coordinate=point2.coordinate
+        point2Annotation.title = "Fin"
+        mapView.addAnnotation(point2Annotation)
         
         //Centra el mapa hacia la coordenada/punto dos
         mapView.centerCoordinate = point2.coordinate
@@ -80,7 +86,7 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
 
         }
         
-        addPolyLineToMap(locations: locations)
+        //addPolyLineToMap(locations: locations)
 
     }
     func addPolyLineToMap(locations: [CLLocationCoordinate2D])
@@ -113,7 +119,25 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
 
     }
     
-
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation {
+            return nil
+        }
+        
+        let reuseId = "pin"
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
+        if pinView == nil {
+            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+            
+            let colorPointAnnotation = annotation as! ColorPointAnnotation
+            pinView?.pinTintColor = colorPointAnnotation.pinColor
+        }
+        else {
+            pinView?.annotation = annotation
+        }
+        
+        return pinView
+    }
     /*
     // MARK: - Navigation
 

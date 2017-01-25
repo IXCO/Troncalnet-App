@@ -554,7 +554,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9S4-2g-hvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="nGm-A9-dfB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2117.5999999999999" y="1190.5547226386807"/>
+            <point key="canvasLocation" x="2127" y="1209"/>
         </scene>
         <!--Notificaciones-->
         <scene sceneID="ZTA-Z6-7d9">
@@ -686,9 +686,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbS-Ix-h7s">
-                                        <rect key="frame" x="400" y="16" width="40" height="41"/>
+                                        <rect key="frame" x="329" y="16" width="45" height="41"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="AmW-JF-Qdg"/>
+                                            <constraint firstAttribute="width" constant="45" id="AmW-JF-Qdg"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="favorite"/>
                                         <connections>
@@ -701,8 +701,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="dbS-Ix-h7s" firstAttribute="leading" secondItem="LnV-hH-ieD" secondAttribute="trailing" constant="88" id="7X8-sL-f6E"/>
-                                    <constraint firstAttribute="trailing" secondItem="dbS-Ix-h7s" secondAttribute="trailing" constant="-66" id="FJf-af-cLQ"/>
+                                    <constraint firstItem="dbS-Ix-h7s" firstAttribute="leading" secondItem="LnV-hH-ieD" secondAttribute="trailing" constant="17" id="7X8-sL-f6E"/>
+                                    <constraint firstAttribute="trailing" secondItem="dbS-Ix-h7s" secondAttribute="trailing" id="FJf-af-cLQ"/>
                                     <constraint firstAttribute="bottom" secondItem="LnV-hH-ieD" secondAttribute="bottom" constant="5" id="Kbm-Dn-zzQ"/>
                                     <constraint firstItem="2e6-Mh-EHu" firstAttribute="top" secondItem="Hch-BE-Ydy" secondAttribute="top" constant="16" id="Ki1-QP-tFf"/>
                                     <constraint firstItem="2e6-Mh-EHu" firstAttribute="centerY" secondItem="Hch-BE-Ydy" secondAttribute="centerY" constant="7.5" id="KoG-Xz-0Wy"/>
