@@ -40,7 +40,7 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
             
             let location = CLLocationCoordinate2D( latitude: self.latitude.doubleValue, longitude: self.longitude.doubleValue)
             
-            let annotation = MKPointAnnotation()
+            let annotation = ColorPointAnnotation(pinColor: UIColor.red)
             annotation.coordinate=location
             
             
@@ -86,7 +86,7 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
 
         }
         
-        //addPolyLineToMap(locations: locations)
+        addPolyLineToMap(locations: locations)
 
     }
     func addPolyLineToMap(locations: [CLLocationCoordinate2D])
@@ -108,14 +108,14 @@ class MapaRegistroViewController: UIViewController, MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        //if overlay.isKind(of: MKPolyline.self) {
+        
             // draw the track
             let polyLineRenderer = MKPolylineRenderer(polyline: self.polyline!)
             polyLineRenderer.strokeColor = UIColor.blue
             polyLineRenderer.lineWidth = 2.0
             
             return polyLineRenderer
-        //}
+        
 
     }
     

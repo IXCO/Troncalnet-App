@@ -106,7 +106,7 @@ class RegistroViewController: UITableViewController {
                                     longitudeAux.append(coordenada["longitude"] as String!)
                                     enViaje=true
                                     
-                                }else if(tipoDeEvento == "Apagado"){
+                                }else if(tipoDeEvento == "Apagado" && enViaje){
                                     
                                     self.fechasAux.append(coordenada["fecha"] as String!)
                                     latitudeAux.append(coordenada["latitude"] as String!)
